@@ -27,7 +27,7 @@ npm run dev
 The project uses [Next.js](https://github.com/vercel/next.js), which is a framework for server-rendered React apps.
 It includes `@mui/material` and its peer dependencies, including `emotion`, the default style engine in MUI v5.
 
-This shows how ssr doesn't work for a modified version of https://github.com/mui/material-ui/tree/master/examples/nextjs
+The code here shows how ssr doesn't work for a modified version of https://github.com/mui/material-ui/tree/master/examples/nextjs
 ## The link component
 
 Next.js has [a custom Link component](https://nextjs.org/docs/api-reference/next/link).
