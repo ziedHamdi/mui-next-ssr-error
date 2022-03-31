@@ -2,13 +2,9 @@
 
 ## How to use
 
-Download the example [or clone the repo](https://github.com/mui/material-ui):
-
-<!-- #default-branch-switch -->
 
 ```sh
-curl https://codeload.github.com/mui/material-ui/tar.gz/master | tar -xz --strip=2  material-ui-master/examples/nextjs
-cd nextjs
+git clone https://github.com/ziedHamdi/mui-next-ssr-error.git
 ```
 
 Install it and run:
@@ -18,20 +14,20 @@ npm install
 npm run dev
 ```
 
-or:
+[comment]: <> (or:)
 
-<!-- #default-branch-switch -->
+[comment]: <> (<!-- #default-branch-switch -->)
 
-[![Edit on StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/mui/material-ui/tree/master/examples/nextjs)
+[comment]: <> ([![Edit on StackBlitz]&#40;https://developer.stackblitz.com/img/open_in_stackblitz.svg&#41;]&#40;https://stackblitz.com/github/mui/material-ui/tree/master/examples/nextjs&#41;)
 
-[![Edit on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/mui/material-ui/tree/master/examples/nextjs)
+[comment]: <> ([![Edit on CodeSandbox]&#40;https://codesandbox.io/static/img/play-codesandbox.svg&#41;]&#40;https://codesandbox.io/s/github/mui/material-ui/tree/master/examples/nextjs&#41;)
 
 ## The idea behind the example
 
 The project uses [Next.js](https://github.com/vercel/next.js), which is a framework for server-rendered React apps.
 It includes `@mui/material` and its peer dependencies, including `emotion`, the default style engine in MUI v5.
-If you prefer, you can [use styled-components instead](https://mui.com/guides/interoperability/#styled-components).
 
+This shows how ssr doesn't work for a modified version of https://github.com/mui/material-ui/tree/master/examples/nextjs
 ## The link component
 
 Next.js has [a custom Link component](https://nextjs.org/docs/api-reference/next/link).
