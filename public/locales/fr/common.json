@@ -1,0 +1,667 @@
+{
+  "proSpace": {
+    "addShop": "Register a company",
+    "shopAdminHomeTitle": "Welcome to the pro space",
+    "admin": {
+      "goTo": "pro space",
+      "drawer": {
+        "categories": "categories",
+        "issueCount": "public :",
+        "title": "Pro",
+        "subtitle": "Register my company",
+        "openTickets": "Open issues",
+        "refusedTickets": "Rejected issues",
+        "conflictTickets": "Conflicts",
+        "solvedTickets": "Solved",
+        "customerView": "Customer view",
+        "admin": "Settings",
+        "home": "Home",
+        "billing": "Payments"
+      },
+      "assign": {
+        "title": "What's the name of your company?",
+        "submit": "Yes validate",
+        "selectedShop": "is your company?"
+      },
+      "userList": {
+        "moderatorCount": "Moderator",
+        "changeRole": {
+          "confirm": {
+            "title": "Change role?",
+            "body": "Please confirm you want to change the role of ",
+            "confirm": "Confirm",
+            "cancel": "Cancel"
+          }
+        },
+        "changeState": {
+          "confirm": {
+            "title": "Change state",
+            "body": "Please confirm you want to change the state of ",
+            "confirm": "Confirm",
+            "cancel": "Cancel"
+          }
+        },
+        "roles": {
+          "ADMIN": "Administrator",
+          "ASR": "Chief moderator",
+          "ASA": "Moderator"
+        },
+        "states": {
+          "PENDING": "Validation pending",
+          "ACTIVE": "Active",
+          "QUIT": "Has quit"
+        }
+      },
+      "orders": {
+        "initiator": "initiator",
+        "formula": "formula",
+        "complaints": "complaints",
+        "start": "start",
+        "end": "end",
+        "status": "status"
+      }
+    },
+    "issues": {
+      "header": {
+        "entity": {
+          "sav": "After sales service"
+        },
+        "eg": {
+          "issueCount": "Open public issues : "
+        }
+      }
+    }
+  },
+  "common": {
+    "entity": {
+      "header": {
+        "webpage": {
+          "unknown": "unknown web page"
+        }
+      },
+      "entityAdmin": {
+        "selectDialog": {
+          "title": "Select an administrator",
+          "issueCountLimit": "complaint count flatrate",
+          "submit": "Validate",
+          "userSuggest": {
+            "label": "facebook name"
+          }
+        }
+      }
+    },
+    "user": {
+      "suggest": {
+        "notFound": "No user found"
+      }
+    },
+    "cookieWarn": "This site uses cookies to deliver its services and analyze traffic. Your IP address and user-agent are shared with Google along with performance and security metrics to ensure quality of service, generate usage statistics, and to detect and address abuse.",
+    "siteName": "WeAlly.org",
+    "tagLine": "Allied together, our complaints become powerful!",
+    "login": {
+      "title": "Use your facebook account to connect",
+      "desc": "Click on the button below"
+    },
+    "entityHome": {
+      "selectEntity": {
+        "header": "Select an entity",
+        "positionLabel": "City",
+        "entityLabel": "Entity name"
+      }
+    },
+    "categories": {
+      "null" : { "name":"All", "desc": "All categories", "subcategoriesTitle": "All"},
+      "subcategoriesTitle": "Home",
+      "state": {
+        "loading": "loading...",
+        "title": "Where did your issue happen?"
+      },
+      "house" : { "name":"House", "desc": "Insurance, Real estate, Plumber, Locksmith, Moving company",
+        "subcategoriesTitle": "House"
+      },
+      "house_insurance": { "name": "insurance", "desc": ""},
+      "house_maintenance": { "name": "maintenance", "desc": "gardener, locksmith, moving company, plumber, roofing contractor, electrician, etc..."},
+      "house_services": { "name": "services", "desc": "internet, water, electricity"},
+      "house_equipment": { "name": "équipement", "desc": "internet, water, electricity"},
+      "house_real_estate": { "name": "real estate", "desc": ""},
+
+      "car" : { "name":"Car", "desc": "Insurance, Car mechanics, Dealers, Rental, Car wash", "subcategoriesTitle": "Car"},
+      "car_insurance": { "name": "insurance", "desc": ""},
+      "car_maintenance": { "name": "maintenance", "desc": ""},
+      "car_dealer": { "name": "dealers", "desc": ""},
+      "car_rent": { "name": "rent", "desc": ""},
+      "car_spaces": { "name": "spaces", "desc": ""},
+
+      "health" : { "name":"Health", "desc": "Insurance, Treatment, Medication, Health Centers, Sport centers", "subcategoriesTitle": "Health"},
+      "health_insurance": { "name": "insurance", "desc": ""},
+      "health_treatment": { "name": "treatment", "desc": ""},
+      "health_medication": { "name": "medication", "desc": ""},
+      "health_center": { "name": "center", "desc": ""},
+      "health_sport": { "name": "sport", "desc": ""},
+
+      "everyday" : { "name":"Everyday", "desc": "Bakery, Restaurant, Cafe, Store, Bank, Sortie", "subcategoriesTitle": "Everyday tasks"},
+      "everyday_bakery": { "name": "bakery", "desc": "sandwiches, cakes, bread, nibbles..."},
+      "everyday_restaurant": { "name": "restaurant", "desc": "fast food, caterer, hot dogs..."},
+      "everyday_cafe": { "name": "cafe", "desc": "coffee, coworking space, pub..."},
+      "everyday_store": { "name": "store", "desc": "clothes, shoes, florist, supermarket..."},
+      "everyday_services": { "name": "services", "desc": "mobile operator, hair care, laundry..."},
+      "everyday_maintenance": { "name": "maintenance", "desc": "mobile operator, hair care, laundry..."},
+      "everyday_bank": { "name": "bank", "desc": "agency, credit card, internet payment..."},
+      "everyday_sortie": { "name": "sortie", "desc": "theatre, cinema, concert, etc..."},
+
+      "purchase" : { "name":"Purchase", "desc": "Mall, Website, Local Shop", "subcategoriesTitle": "Purchasing and shopping"},
+      "purchase_mall": { "name": "mall", "desc": ""},
+      "purchase_website": { "name": "website", "desc": ""},
+      "purchase_local_shop": { "name": "local shop", "desc": ""},
+
+      "travel" : { "name":"Travel", "desc": "Airport, Agency, Hotel, Guestroom", "subcategoriesTitle": "Travelling"},
+      "travel_airport": { "name": "airport", "desc": ""},
+      "travel_agency": { "name": "agency", "desc": ""},
+      "travel_hotel": { "name": "hotel", "desc": ""},
+      "travel_guestroom": { "name": "guestroom", "desc": ""},
+
+      "employer" : { "name":"Employer", "desc": "Management, Payment, Health conditions", "subcategoriesTitle": "Employer issues"},
+      "employer_management_practices": { "name": "management practices", "desc": ""},
+      "employer_payment": { "name": "payment", "desc": ""},
+      "employer_health_conditions": { "name": "health conditions", "desc": ""},
+      "employer_other": { "name": "other", "desc": ""},
+
+      "legal" : { "name":"Legal", "desc": "Accounting, Lawyer", "subcategoriesTitle": "Legal services"},
+      "legal_accounting": { "name": "accounting", "desc": "a problem with your accounting agent? talk about it here"},
+      "legal_lawyer": { "name": "lawyer", "desc": "a problem with your lawyer? talk about it here"},
+
+      "city" : { "name":"City", "desc": "Environment, Security, Public services, Public spaces", "subcategoriesTitle": "Public services"},
+      "city_environment": { "name": "environment", "desc": "sea, river, air, water, sound pollution"},
+      "city_security": { "name": "security", "desc": "aggressions, thefts, bad police behavior"},
+      "city_public_services": { "name": "public services", "desc": "town hall, school, university, etc..."},
+      "city_infrastructure": { "name": "infrastructures", "desc": "roads, lighting, transports"},
+      "city_public_spaces": { "name": "public spaces", "desc": "park, camping, city market"},
+
+      "theft" : { "name":"Theft", "desc": "Car, Bike, Computer, Phone, Electronics", "subcategoriesTitle": "Vitim of a theft? what was stolen to you?"},
+      "theft_car": { "name": "car", "desc": ""},
+      "theft_bike": { "name": "bike", "desc": ""},
+      "theft_computer": { "name": "computer", "desc": ""},
+      "theft_mobile": { "name": "mobile", "desc": ""},
+      "theft_music_instrument": { "name": "music instrument", "desc": ""},
+      "theft_electronics": { "name": "electronics", "desc": ""},
+      "theft_other": { "name": "other", "desc": ""}
+
+    },
+    "maps": {
+      "types": {
+        "accounting": "accounting",
+        "airport": "airport",
+        "amusement_park": "amusement park",
+        "aquarium": "aquarium",
+        "art_gallery": "art gallery",
+        "atm": "atm",
+        "bakery": "bakery",
+        "bank": "bank",
+        "bar": "bar",
+        "beauty_salon": "beauty salon",
+        "bicycle_store": "bicycle store",
+        "book_store": "book store",
+        "bowling_alley": "bowling alley",
+        "bus_station": "bus station",
+        "cafe": "cafe",
+        "campground": "campground",
+        "car_dealer": "car dealer",
+        "car_rental": "car rental",
+        "car_repair": "car repair",
+        "car_wash": "car wash",
+        "casino": "casino",
+        "cemetery": "cemetery",
+        "church": "church",
+        "city_hall": "city hall",
+        "clothing_store": "clothing store",
+        "convenience_store": "convenience store",
+        "courthouse": "courthouse",
+        "dentist": "dentist",
+        "department_store": "department store",
+        "doctor": "doctor",
+        "electrician": "electrician",
+        "electronics_store": "electronics store",
+        "embassy": "embassy",
+        "fire_station": "fire station",
+        "florist": "florist",
+        "food": "food",
+        "funeral_home": "funeral home",
+        "furniture_store": "furniture store",
+        "gas_station": "gas station",
+        "gym": "gym",
+        "hair_care": "hair care",
+        "hardware_store": "hardware store",
+        "hindu_temple": "hindu temple",
+        "home_goods_store": "home goods store",
+        "hospital": "hospital",
+        "insurance_agency": "insurance agency",
+        "jewelry_store": "jewelry store",
+        "laundry": "laundry",
+        "lawyer": "lawyer",
+        "library": "library",
+        "liquor_store": "liquor store",
+        "local_government_office": "local government office",
+        "locksmith": "locksmith",
+        "lodging": "lodging",
+        "meal_delivery": "meal delivery",
+        "meal_takeaway": "meal takeaway",
+        "mosque": "mosque",
+        "movie_rental": "movie rental",
+        "movie_theater": "movie theater",
+        "moving_company": "moving company",
+        "museum": "museum",
+        "night_club": "night club",
+        "painter": "painter",
+        "park": "park",
+        "parking": "parking",
+        "pet_store": "pet store",
+        "pharmacy": "pharmacy",
+        "physiotherapist": "physiotherapist",
+        "plumber": "plumber",
+        "police": "police",
+        "post_office": "post office",
+        "real_estate_agency": "real estate agency",
+        "restaurant": "restaurant",
+        "roofing_contractor": "roofing contractor",
+        "rv_park": "rv park",
+        "school": "school",
+        "shoe_store": "shoe store",
+        "shopping_mall": "Centre de Shopping",
+        "spa": "spa",
+        "stadium": "stadium",
+        "storage": "storage",
+        "store": "Boutiques",
+        "subway_station": "subway station",
+        "supermarket": "supermarket",
+        "synagogue": "synagogue",
+        "taxi_stand": "taxi stand",
+        "train_station": "train station",
+        "transit_station": "transit station",
+        "travel_agency": "travel agency",
+        "veterinary_care": "veterinary care",
+        "zoo": "zoo",
+        "natural_feature": "natural feature"
+      }
+    },
+    "drawer": {
+      "news": "Nouvautés",
+      "categories": "categories",
+      "service": "Services",
+      "product": "Products",
+      "issues": "My complaints",
+      "city": "City",
+      "actions": "My actions"
+    },
+    "buttons": {
+      "addShop": "Add a company",
+      "editShop": "Edit"
+    },
+    "issue": {
+      "join": {
+        "message": {
+          "success": "Bravo! Vous faites désormais partie des plaingnants"
+        }
+      },
+      "solved": {
+        "message": {
+          "success": "Felicitations! nous sommes content que votre plainte soit résolue"
+        }
+      },
+      "quit": {
+        "message": {
+          "success": "Vous vous êtes supprimé de la plainte"
+        }
+      },
+      "like": {
+        "message": {
+          "success": "Merci pour votre intérêt, vous serez notifié de l'avancement de cette plainte"
+        }
+      },
+      "create": {
+        "category": {
+          "select": "Please choose the category of the entity you want to complain about",
+          "selected": "Category :"
+        },
+        "header": ""
+      },
+
+      "stats": {
+        "similar": "similar issues declared",
+        "touched": "likes",
+        "solved": "résolu sur",
+        "comment": "comments",
+        "usersCommented": "users wrote",
+        "sameIssue": "testimonials"
+      },
+      "action": {
+        "title": {
+          "solved": "mark issue as solved if you are satisfied with the compensation the after sales service gave you",
+          "touched": "like",
+          "quitIssue": "Supprimer",
+          "sameIssue": "same issue?"
+        },
+        "label": {
+          "solved": "mark as solved ",
+          "touched": "like",
+          "quitIssue": "Supprimer",
+          "sameIssue": "Rejoindre",
+          "sameIssueJoinBack" : "Réouvrir"
+        },
+        "description": {
+          "solved": "marked the complaint as solved ",
+          "quit": "s'est supprimé de la liste des plaignants",
+          "sameIssue": "testifies the issue",
+          "like": "liked the issue",
+          "unlike": "cancelled the issue like"
+        },
+        "add": {
+          "solved": "Solved",
+          "like": "helpful",
+          "facebook": "share",
+          "sameIssue": "Same for me",
+          "rejected": "Reject",
+          "rejectedComment": "Problem rejected",
+          "placeholder": {
+            "COMMENT": "Add comment",
+            "SHOP_ACTION_EXPECTED": "Specify the action you would like the company to do",
+            "SHOP_ACTION_REFUSED": "Specify why you reject the action asked by the customer",
+            "USER_ACTION_EXPECTED": "Specify the action you would like the customer to do",
+            "USER_ACTION_REFUSED": "Specify why you reject the action proposed by the company"
+          }
+        }
+      }
+    }
+  },
+  "panel": {
+    "right": {
+      "Home": {
+        "info": {
+          "header": "What to do?",
+          "title": "Choose a category",
+          "li1": "Select the place <b>where</b> the service company you want to complain about acts",
+          "li2": "If you are victim of a theft, click on the <b>Theft</b> category",
+          "li3": ""
+        }
+      },
+      "Categories": {
+        "info": {
+          "header": "Qu'est-ce que je fais?",
+          "title": "Choisissez une categorie",
+          "li1": "Selectionnez l'endroit <b>où le service agit</b>",
+          "li2": "Si vous voulez vous plaindre d'un mauvais service de l'état cliquez sur <b>Ville</b>",
+          "li3": ""
+        }
+      },
+      "CategoryEntities": {
+        "info": {
+          "header": "What to do?",
+          "title": "Search for the business",
+          "li1": "<b>1-</b> Type the city or country",
+          "li2": "<b>2-</b> Type the business name",
+          "li3": "<b>Note :</b> if the business is a website, just type the country where you are "
+        }
+      },
+      "SubCategoryList": {
+        "info": {
+          "header": "What to do?",
+          "title": "Choose a subcategory",
+          "li1": "Select the field <b>where</b> the service company you want to complain about acts",
+          "li2": "If you are victim of a theft, click on the <b>Theft</b> category",
+          "li3": ""
+        }
+      },
+      "MyIssues": {
+        "info": {
+          "header": "What to do?",
+          "title": "Read more about us on Indiegogo",
+          "li1": "<b>Help us extend the platform</b> to other types of complaints like city life quality and product quality",
+          "li2": "Get <b>100% argan oil</b> directly imported from the only place in the world it grows in and made by locals, collected by a cooperative in Morocco",
+          "li3": "<b>Talk about us</b> in your blog, vlog or other media and let us know about it, we want to thank you by linking to your page on our credits page"
+        }
+      },
+      "SearchEntity": {
+        "info": {
+          "header": "What to do?",
+          "title": "Read more about us on Indiegogo",
+          "li1": "<b>Help us extend the platform</b> to other types of complaints like city life quality and product quality",
+          "li2": "Get <b>100% argan oil</b> directly imported from the only place in the world it grows in and made by locals, collected by a cooperative in Morocco",
+          "li3": "<b>Talk about us</b> in your blog, vlog or other media and let us know about it, we want to thank you by linking to your page on our credits page"
+        }
+      },
+      "Entity": {
+        "info": {
+          "header": "What to do?",
+          "title": "Read more about us on Indiegogo",
+          "li1": "<b>Help us extend the platform</b> to other types of complaints like city life quality and product quality",
+          "li2": "Get <b>100% argan oil</b> directly imported from the only place in the world it grows in and made by locals, collected by a cooperative in Morocco",
+          "li3": "<b>Talk about us</b> in your blog, vlog or other media and let us know about it, we want to thank you by linking to your page on our credits page"
+        }
+      },
+      "Issue": {
+        "info": {
+          "header": "What to do?",
+          "title": "Read more about us on Indiegogo",
+          "li1": "<b>Help us extend the platform</b> to other types of complaints like city life quality and product quality",
+          "li2": "Get <b>100% argan oil</b> directly imported from the only place in the world it grows in and made by locals, collected by a cooperative in Morocco",
+          "li3": "<b>Talk about us</b> in your blog, vlog or other media and let us know about it, we want to thank you by linking to your page on our credits page"
+        }
+      }
+    }
+  },
+
+  "service": {
+    "panel": {
+      "left": {
+        "info": {
+          "title": "Fast issue solving and fair businesses",
+          "li1": "<b>Get the same compensation as others</b> when you have an issue with a company",
+          "li2": "<b>Contribute</b> to a world with <b>better service</b> warranties and better <b>work conditions</b>",
+          "li3": "Find and talk to people who have the <b>same interests</b> as you"
+        }
+      }
+    },
+    "header": {
+      "city": "City or Country",
+      "nearby": "Nearby",
+      "entity": {
+        "issueCount": "open issues : ",
+        "none": "no open issues",
+        "titleNameSuffix": "issues - weally.org"
+      }
+    },
+    "addEntityGroup": {
+      "header": "Adding the business you will complain about",
+      "add": "Add business",
+      "cancel": "Cancel",
+      "name": "Business name",
+      "web": "Web or facebook page",
+      "fb": "Facebook page",
+      "city": "City or country *"
+    },
+    "search": {
+      "addNew": "Add the business : ",
+
+      "entityHome": {
+        "hint": "tap the name of a company to see the complaints it has"
+      },
+      "positionPlaceholder": "type a city or country",
+      "placeholder": "choose entity by name",
+      "go": "Go",
+      "result": {
+        "loading": "searching...",
+        "phrase": "Search results",
+        "more": "more...",
+        "from": "from"
+      },
+      "issues": {
+        "Home": {
+          "empty": "Il n'y encore aucune plainte",
+          "title": "Liste des plaintes en cours"
+        },
+        "CategoryEntities": {
+          "empty": "no complaints found",
+          "title": "Current complaints"
+        },
+        "Entity": {
+          "empty": "no complaints found",
+          "title": "Current complaints"
+        },
+        "Issue": {
+          "empty": "no complaints found for this company",
+          "title": "Company's complaints"
+        },
+        "MyIssues": {
+          "empty": "you do not have open complaints",
+          "title": "My complaints"
+        },
+        "ProEntityGroupTickets": {
+          "empty": "no complaints for this section",
+          "title": "Current complaints"
+        },
+        "ProEntityTickets": {
+          "empty": "no complaints found for this company",
+          "title": "Company's complaints"
+        },
+        "ProEntityTicketDetail": {
+          "empty": "no complaints found for this company",
+          "title": "Company's complaints"
+        }
+      }
+    },
+    "issue": {
+      "state": {
+        "SHOP_ACTION_EXPECTED": {
+          "label": "testifies the issue"
+        },
+        "SHOP_ACTION_REFUSED": {
+          "label": "complaint was rejected by the after sales service"
+        },
+        "USER_ACTION_EXPECTED": {
+          "label": "is expected to react to compensation proposal"
+        },
+        "USER_ACTION_REFUSED": {
+          "label": "rejected compensation proposal"
+        },
+        "USER_SATISFIED": {
+          "label": "is happy with the proposed compensation"
+        },
+        "USER_QUIT": {
+          "label": "vous avez quitté cette plainte"
+        }
+      }
+    },
+    "ticket": {
+      "add": {
+        "header": "You are editing a complaint",
+        "title": "Subject",
+        "titlePh": "one line description",
+        "details": "Details",
+        "detailsPh": "You can detail more your issue : with who did you talk, how long are you seeking for a solution...",
+        "video": "Lien vidéo",
+        "videoPh": "Copiez et collez l'adresse d'une video youtube, vimeo ou autre ici",
+        "addBtn": "Confirm",
+        "saveDraftBtn": "Save as Draft",
+        "cancelBtn": "Cancel",
+        "addFile": "add image",
+        "issueOpenEditionDisabled": "This issue become public, you cannot edit it anymore",
+        "editIssue": "edit",
+        "deleteIssue": "supprimer",
+        "closeDetail": "close",
+        "attachmentsToRemoveTitle": "these images will be removed on confirm",
+        "billingDate": "Purchase date",
+        "issueDate": "Issue date"
+      }
+    },
+    "complaint": {
+      "header": {
+        "and": "and",
+        "others": "others",
+        "joined": "joined request to"
+      },
+      "list": {
+        "more": {
+          "empty": "This company still has no complaints",
+          "info": "You are seeing {{visibleCount}} issues from {{totalCount}}",
+          "btn": "more..."
+        }
+      },
+      "actionList": {
+        "commentsOnlyBtn": "Commentaires uniquement"
+      },
+      "by": "by",
+      "privateIconHint": "this issue remains in private mode for a week before going public",
+      "likesIconHint": "the times this issue was liked",
+      "similarIssueIconHint": "the this this issue was marked as similar to someone else's",
+      "draft": "draft"
+    }
+  },
+  "pro": {
+    "header": {
+      "welcome": "WeAlly Pro",
+      "search": {
+        "placeholder": "Cherchez une plainte"
+      }
+    },
+    "issue": {
+      "list": {
+        "filter": {
+          "showDelayed": "différés",
+          "showPublic": "publics",
+          "showWaitingForUser": "en attente d'action de l'utilisateur ",
+          "showWaitingForASA": "en attente d'action de l'agent"
+        }
+      },
+      "detail": {
+        "close": "fermer"
+      }
+    }
+  },
+  "home": {
+    "header": "Report a ",
+    "service": {
+      "title": "Bad service",
+      "short-desc": "If you purchased a service you are not satisfied with, make the company react rapidly to your complaint: complain publicly here to make your issue visible to google and everybody who searches for info about that company in the world, as long as you did not flag your issue as 'solved', it will remain in the list of the company's unsolved customer issues",
+      "full-desc": "lorem ipsum dolor"
+    },
+    "city": {
+      "title": "Theft or agression",
+      "short-desc": "Coming next : If you were victim of a theft, agression or other issue that should be handled by the public services, you can report it here so that people can have real statistics about city happiness. People moving to a new home will be able to choose the right quarter for their family, and the mayor of each rural area will be judged against factual numbers reflecting his efficiency",
+      "short-desc1": "If you were victim of a theft or agression, people must know that the quarter it happened in is not safe. People moving to a new home will be able to choose the right quarter for his family, and the mayor of each rural area will be judged against factual numbers",
+      "full-desc": "lorem ipsum dolor"
+    },
+    "product": {
+      "title": "Bad product",
+      "short-desc": "Coming next: If a product you purchased shows to be of bad quality or durability, you can reference it here to share your experience and exchange about solutions and alternatives. You will be able to compare brands by the average quality of their products while putting pressure on manufacturers to make them have more reliable offers",
+      "full-desc": "lorem ipsum dolor"
+    }
+  },
+  "comment": {
+    "add": {
+      "notLogged": "You must <1>login</1> to add a comment"
+    }
+  },
+  "complaint": {
+    "addActionOk": "post",
+    "addActionCancel": "Cancel"
+  },
+  "addComplaint": {
+    "add": "Report an issue",
+    "header": "report an issue"
+  },
+  "complaintActionList": {
+    "empty": "there are no comments, be the first to react to this complaint"
+  },
+  "header": {
+    "search": "Search",
+    "login": "Login"
+  },
+  "shopList": {
+    "activeComplaints": "unsolved issues",
+    "noComplaints": "no complaints",
+    "header": "Companies found for your search",
+    "home": "Home"
+  },
+  "addComplaintComment": {
+    "header": "Your comment"
+  }
+}

@@ -1,0 +1,1 @@
+export const NOT_MOBILE_SCREEN_SIZE = '(min-width:940px)';

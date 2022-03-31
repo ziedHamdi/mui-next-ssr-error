@@ -1,0 +1,8 @@
+{
+  "search": {
+    "noResults": {
+      "title": "No results found",
+      "body": "Please move the map to the desired zone and eventually zoom in or out. Retry your search by hitting ENTER"
+    }
+  }
+}

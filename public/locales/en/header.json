@@ -1,0 +1,15 @@
+{
+  "header": {
+    "startRequest": "Create Request",
+    "trendingToday": "Trending today",
+    "companyInfo": "The company"
+  },
+  "state": {
+    "loading": "Loading...",
+    "saving": "Saving...",
+    "error": "An error occured"
+  },
+  "info": {
+    "noEntitySelected": "Select the company you're creating a request for"
+  }
+}

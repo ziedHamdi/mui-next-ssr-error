@@ -1,0 +1,84 @@
+{
+  "action": {
+    "sameIssue": "Same issue",
+    "solved": "solved",
+    "quit": "quit",
+    "like": "like",
+    "unlike": "unlike"
+  },
+  "edit": {
+    "header": "Editing your request",
+    "errors": {
+      "entityNotSelected": "You must select the business or company you're filing the request about",
+      "titleMissing": "Please fill in a title for your request",
+      "descMissing": "Please tell your story so that people can show empathy and enhance your request visibility to others",
+      "pictureMissing": "By adding a picture, people are twice more likely to click on your request. If you don't have a picture, pick one that expresses your feeling from the web."
+    },
+    "search": {
+      "placeholder": "Who was nasty to you? Type in a company name"
+    },
+    "title": {
+      "label": "Summary",
+      "ph": "Summarize in a line"
+    },
+    "desc": "Description",
+    "saveDraft": "Save",
+    "publish": "publish",
+    "cancel": "cancel"
+  },
+  "item": {
+    "header": {
+      "and": "and",
+      "others": "others",
+      "joined": "requested action from",
+      "posted": "posted",
+      "aloneAgainst": "about"
+    },
+    "trending": {
+      "title": {
+        "customersAbout": "about"
+      }
+    },
+    "rightPanel": {
+      "joinState": {
+        "quit": "You have quit this request",
+        "solved": "You marked the request as solved"
+      },
+      "join": "Join",
+      "joinBack": "Reopen",
+      "agree": "empathy",
+      "cancelAgree": "no empathy",
+      "edit": "Edit",
+      "delete": "Delete",
+      "solved": "Solved",
+      "quit": "Quit",
+      "solvedPercentage": "Solved",
+      "solvedPercentageShort": "solved"
+    },
+    "stats": {
+      "showSolidarity": "empathy",
+      "comments": "comments",
+      "shared": "shared"
+    },
+    "showMore": "More",
+    "showLess": "Less"
+  },
+  "detail": {
+    "header": {
+      "joined": "people joined this request",
+      "viewed": "times viewed"
+    },
+    "descLabel": "Description",
+    "comments": {
+      "count": "Comments",
+      "add": "Post comment"
+    }
+  },
+  "status": {
+    "WAITING_FOR_PROPOSAL": "waiting for suggestions",
+    "DRAFT": "draft"
+  },
+  "companies": {
+    "mostViewed": "The most viewed companies"
+  }
+}

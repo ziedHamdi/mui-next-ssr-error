@@ -1,0 +1,686 @@
+{
+  "proSpace": {
+    "addShop": "Enregristrer une institution",
+    "shopAdminHomeTitle": "Bienvenue dans l'espace pro",
+    "admin": {
+      "goTo": "espace pro",
+      "drawer": {
+        "categories": "categories",
+        "issueCount": "public :",
+        "title": "Pro",
+        "subtitle": "Enregistrer mon institution",
+        "openTickets": "plaintes ouvertes",
+        "refusedTickets": "plaintes rejetées",
+        "conflictTickets": "Conflits",
+        "solvedTickets": "Résolus",
+        "customerView": "Vue publique",
+        "admin": "Configuration",
+        "home": "Accueil",
+        "billing": "Payements"
+      },
+      "assign": {
+        "title": "Saisissez le nom de votre institution :",
+        "submit": "Oui valider",
+        "selectedShop": "est bien votre institution?"
+      },
+      "userList": {
+        "moderatorCount": "Modérateurs",
+        "changeRole": {
+          "confirm": {
+            "title": "Modifier le role?",
+            "body": "Veuillez confirmer que vous voulez modifier le role de ",
+            "confirm": "Confirmer",
+            "cancel": "Annuler"
+          }
+        },
+        "changeState": {
+          "confirm": {
+            "title": "Modifier l'état",
+            "body": "Veuillez confirmer que vous voulez modifier l'état de ",
+            "confirm": "Confirmer",
+            "cancel": "Annuler"
+          }
+        },
+        "roles": {
+          "ADMIN": "Administrateur",
+          "ASR": "Modérateur en chef",
+          "ASA": "Modérateur"
+        },
+        "states": {
+          "PENDING": "En attente de validation",
+          "ACTIVE": "Actif",
+          "QUIT": "A quitté"
+        }
+      },
+      "orders": {
+        "initiator": "initiateur",
+        "formula": "formule",
+        "complaints": "plaintes",
+        "start": "début",
+        "end": "fin",
+        "status": "état"
+      }
+    },
+    "issues": {
+      "header": {
+        "entity": {
+          "sav": "Service après vente"
+        },
+        "eg": {
+          "issueCount": "Plaintes ouvertes: "
+        }
+      }
+    }
+  },
+  "common": {
+    "entity": {
+      "header": {
+        "webpage": {
+          "unknown": "Page web inconnue"
+        }
+      },
+      "entityAdmin": {
+        "selectDialog": {
+          "title": "Selectionnez un administrateur",
+          "issueCountLimit": "forfait nombre de plaintes",
+          "submit": "Valider",
+          "userSuggest": {
+            "label": "Nom sur facebook"
+          }
+        }
+      }
+    },
+    "user": {
+      "suggest": {
+        "notFound": "Aucun utilisateur trouvé"
+      }
+    },
+    "cookieWarn": "Ce site utilise des cookies afin de vous apporter une expérience personnalisée, en continuant, vous acceptez nos condition d'utilisation",
+    "siteName": "5ir.tn",
+    "tagLine": "Signalez les problèmes, militez pour un meilleur environnement",
+    "login": {
+      "title": "Nous allons vous connecter grâce à votre compte facebook",
+      "desc": "Cliquez sur le bouton ci-dessous pour procéder à votre connection"
+    },
+    "entityHome": {
+      "selectEntity": {
+        "header": "Trouvez une institution",
+        "positionLabel": "Ville",
+        "entityLabel": "nom de l'institution"
+      }
+    },
+    "categories": {
+      "subcategoriesTitle": "Accueil",
+      "state": {
+        "loading": "chargement...",
+        "title": "Où avez vous eu un souci?"
+      },
+
+      "null" : { "name":"Toutes", "desc": "Toutes catégories confondues", "subcategoriesTitle": "Ville"},
+
+      "city" : { "name":"Ville", "desc": "Environnement, Securité, Infrastructure, Institutions publiques, Espaces publics", "subcategoriesTitle": "Ville"},
+      "city_environment": { "name": "Environnement", "desc": "Mer, rivière, air, eau, terres ou son pollué, parlez-en"},
+      "city_security": { "name": "Securité", "desc": "Vous avez été victime d'un vol, agression, mauvais comportement d'un agent de police? parlez-en ici"},
+      "city_public_services": { "name": "Institutions publiques", "desc": "Un mauvais service constaté à la mairie, à un établissement scolaire ou à la poste?"},
+      "city_infrastructure": { "name": "Infrastructures", "desc": "routes, éclairage, transport defectueux? signalez le ici"},
+      "city_public_spaces": { "name": "Espaces publics", "desc": "Un park ou espace public en mauvais état? signalez-le"},
+
+      "corruption" : { "name":"Anti-corruption", "desc": "Signaler une corruption! Les députés du parti Errahma s'occuperont du dossier", "subcategoriesTitle": "Anti-corruption"},
+      "corruption_environment": { "name": "Environnement", "desc": "Ministère de l’équipement, de l’aménagement du territoire et du développement durable"},
+      "corruption_security": { "name": "Intérieur", "desc": "Ministère de l’intérieur"},
+      "corruption_justice": { "name": "Justice", "desc": "Ministère de la justice, des droits de l’Homme et de la justice transitionnelle"},
+      "corruption_foreign": { "name": "Étranger", "desc": "Ministère des affaires étrangères"},
+      "corruption_defense": { "name": "Défense", "desc": "Ministère de la défense nationale"},
+      "corruption_transport": { "name": "Transport", "desc": "Ministère du Transport"},
+      "corruption_religion": { "name": "Religion", "desc": "Ministère des affaires religieuses"},
+      "corruption_finance": { "name": "Finance", "desc": "Ministère de l’économie et des finances"},
+      "corruption_agriculture": { "name": "Agriculture", "desc": "Ministère de l’Agriculture"},
+      "corruption_industry": { "name": "Industrie", "desc": "Ministère de l’industrie, de l’énérgie et des mines"},
+      "corruption_tourism": { "name": "Tourisme", "desc": "Ministère du tourisme"},
+      "corruption_youth": { "name": "Jeunesse", "desc": "Ministère de la jeunesse, des sports, de la femme et de la famille"},
+      "corruption_culture": { "name": "Culture", "desc": "Ministère de la Culture"},
+      "corruption_health": { "name": "Santé", "desc": "Ministère de la santé publique"},
+      "corruption_social": { "name": "Social", "desc": "Ministère des affaires sociales"},
+      "corruption_commerce": { "name": "Commerce", "desc": "Ministre du Commerce et de l’Artisanat"},
+      "corruption_education": { "name": "Éducation", "desc": "Ministère de l’éducation"},
+      "corruption_research": { "name": "Recherche", "desc": "Ministère de l’enseignement supérieur, de la recherche scientifique, des technologies de l’information et de la communication"},
+      "corruption_employment": { "name": "Emploi", "desc": "Ministère de l’emploi et de la formation professionnelle"},
+      "corruption_government": { "name": "Présidence", "desc": "Présidence du Gouvernement"},
+
+      "house" : { "name":"Maison", "desc": "Assurance, Agence immobilière, Plombier, Serrurier, Société de déménagement",
+        "subcategoriesTitle": "Maison"
+      },
+      "house_insurance": { "name": "Assurance", "desc": "un problème avec votre assurance? parlez-en ici"},
+      "house_maintenance": { "name": "Entretien", "desc": "jardinier, plombier, serrurier, electricien, société de démanagement, société de construction, etc..."},
+      "house_services": { "name": "Services", "desc": "internet, eau, electricité, gaz"},
+      "house_equipment": { "name": "équipement", "desc": "électroménager, climatisation, meubles, équipement de jardin"},
+      "house_real_estate": { "name": "Agences immobilières", "desc": "un problème lié aux serices ou au contrat avec votre agence"},
+
+      "car" : { "name":"Voiture", "desc": "Assurance, mécanicien, concessionnaire, location, services : lavage, tapisserie, etc...", "subcategoriesTitle": "Voiture"},
+      "car_insurance": { "name": "Assurance", "desc": "un problème avec votre assurance? parlez-en ici"},
+      "car_maintenance": { "name": "Entretien", "desc": "réparation, lavage, pneux, equilibrage, etc..."},
+      "car_dealer": { "name": "Concessionnaire", "desc": "un probème avec un concessionnaire ou maison mère de votre véhicule"},
+      "car_rent": { "name": "Location", "desc": "un problème lors d'une location de voiture?"},
+      "car_spaces": { "name": "Espaces", "desc": "il est arrivé quelque chose à votre voiture dans un parking?"},
+
+      "health" : { "name":"Santé", "desc": "Assurance, Traitement, Medicaments, Thalasso, Centres sportifs", "subcategoriesTitle": "Health"},
+      "health_insurance": { "name": "Assurance", "desc": "Un problème de remboursement? de prix excessifs? de contrat? entrez-ici"},
+      "health_treatment": { "name": "Traitement", "desc": "Un soucis avec un médecin, un thérapeute ou autre agent de la santé?"},
+      "health_medication": { "name": "Médicament", "desc": "Un soucis après la prise d'un médicament, un médicament introuvable, parlez-en ici"},
+      "health_center": { "name": "Centre de santé", "desc": "Centre médical, Cantre thérapeutique, Centre de thalasso, Sauna, etc..."},
+      "health_sport": { "name": "Sport", "desc": "Club sportif, Coach, Sortie sportive ou compétition"},
+
+      "everyday" : { "name":"Quotidien", "desc": "Patisserie, Restaurant, Café, Boutique, Banque, Lieu de sortie", "subcategoriesTitle": "Quotidien"},
+      "everyday_bakery": { "name": "Patisserie", "desc": "Un souci avec une patisserie ou boulangerie. Faites le savoir"},
+      "everyday_restaurant": { "name": "Restaurant", "desc": "fast food, traiteur, retaurant..."},
+      "everyday_cafe": { "name": "Cafe", "desc": "café, coworking space, salon de thé..."},
+      "everyday_store": { "name": "Boutique", "desc": "vétements, chaussures, fleuriste, supermarché..."},
+      "everyday_services": { "name": "Services", "desc": "operateur mobile, coiffeur, lavage à sec..."},
+      "everyday_maintenance": { "name": "Réparateur", "desc": "mobile, electronique, autres"},
+      "everyday_bank": { "name": "Banque", "desc": "agence, carte de credit, payment sur internet, parlez de votre souci ici"},
+      "everyday_sortie": { "name": "Sortie", "desc": "espace pour enfants, randonnée, evenement..."},
+
+      "purchase" : { "name":"Gros Achat", "desc": "Hyperermarhé, Site web, Electroménager, Electronique", "subcategoriesTitle": "Gros achat"},
+      "purchase_mall": { "name": "Hypermarché", "desc": "vous avez un souci avec une grande institution d'hypermarché, parlez-en ici"},
+      "purchase_website": { "name": "Site web", "desc": "vous avez un souci avec un site web, parlez-en ici"},
+      "purchase_local_shop": { "name": "Boutique", "desc": "vous avez fait un gros achat d'une boutique locale, comme un appareil electroménager, et vous n'en êtes pas satisfait? parlez en"},
+
+      "travel" : { "name":"Voyage", "desc": "Aeroport, Agence de voyages, Hotel, Chambre d'hotes", "subcategoriesTitle": "Voyage"},
+      "travel_airport": { "name": "Aeroport", "desc": "Valise détruite ou volée, non remboursement, prix non annoncés, mauvais état d'hygiène"},
+      "travel_agency": { "name": "Agence de voyages", "desc": "Mauvais séjour à l'étranger, mauvaise organisation, partagez l'info ici"},
+      "travel_hotel": { "name": "Hotel", "desc": "Un souci à un hotel, vous pouvez vous plaindre de l'agence et de l'hotel en postant un plainte dans chaque catégorie"},
+      "travel_guestroom": { "name": "Chambre d'hotes", "desc": "Une chambre d'hotes que vous ne recommandez pas aux autres? parlez-en ici. "},
+
+      "employer" : { "name":"Employeur", "desc": "Management, Payement, Conditions de travail", "subcategoriesTitle": "Employeur"},
+      "employer_management_practices": { "name": "Management", "desc": "Vous avez été victime de mauvaises pratiques de la part de votre employeur? faites le savori aux autres"},
+      "employer_payment": { "name": "Payment", "desc": "Votre employeur ne vous a pas payé? dénoncez le ici"},
+      "employer_health_conditions": { "name": "Conditions de travail", "desc": "Vos conditions de travail sont dangereuses ou mauvaises pour la santé? parlez-en"},
+      "employer_other": { "name": "Autres", "desc": ""},
+
+      "legal" : { "name":"Legal", "desc": "Comptable, Avocat", "subcategoriesTitle": "Legal"},
+      "legal_accounting": { "name": "Comptable", "desc": "Vous avez un souci avec un comtable qui a mal fait son travail? parlez en"},
+      "legal_lawyer": { "name": "Avocat", "desc": "Votre avocat a trahi votre confiance, a des comportements qui vous semblent anormaux, parlez-en"},
+
+      "theft" : { "name":"Theft", "desc": "Car, Bike, Computer, Phone, Electronics", "subcategoriesTitle": "Vitim of a theft? what was stolen to you?"},
+      "theft_car": { "name": "car", "desc": ""},
+      "theft_bike": { "name": "bike", "desc": ""},
+      "theft_computer": { "name": "computer", "desc": ""},
+      "theft_mobile": { "name": "mobile", "desc": ""},
+      "theft_music_instrument": { "name": "music instrument", "desc": ""},
+      "theft_electronics": { "name": "electronics", "desc": ""},
+      "theft_other": { "name": "other", "desc": ""}
+
+    },
+    "maps": {
+      "types": {
+        "accounting": "Comptable",
+        "airport": "Aeroport",
+        "amusement_park": "park d'attractions",
+        "aquarium": "aquareum",
+        "art_gallery": "gallerie d'art",
+        "atm": "automate bancaire",
+        "bakery": "patisserie",
+        "bank": "banque",
+        "bar": "bar",
+        "beauty_salon": "salon de beauté",
+        "bicycle_store": "boutique de bicyclettes",
+        "book_store": "boutique de livres",
+        "bowling_alley": "bowling",
+        "bus_station": "station de bus",
+        "cafe": "café",
+        "campground": "campground",
+        "car_dealer": "concessionnaire auto",
+        "car_rental": "location de voitures",
+        "car_repair": "méchanicien",
+        "car_wash": "lavage auto",
+        "casino": "casino",
+        "cemetery": "cimetière",
+        "church": "église",
+        "city_hall": "mairie",
+        "clothing_store": "boutique de vetments",
+        "convenience_store": "épicier",
+        "courthouse": "tribunal",
+        "dentist": "dentiste",
+        "department_store": "department_store",
+        "doctor": "médecin",
+        "electrician": "electricien",
+        "electronics_store": "boutique electronique",
+        "embassy": "ambassade",
+        "fire_station": "pompiers",
+        "florist": "fleuriste",
+        "food": "aliments",
+        "funeral_home": "funeral home",
+        "furniture_store": "meubles",
+        "gas_station": "station essence",
+        "gym": "gym",
+        "hair_care": "coiffeur",
+        "hardware_store": "quincaillerie",
+        "hindu_temple": "hindu_temple",
+        "home_goods_store": "articles pour maison",
+        "hospital": "hopital",
+        "insurance_agency": "assurance",
+        "jewelry_store": "bijoux",
+        "laundry": "blanchisserie",
+        "lawyer": "avocat",
+        "library": "librarie",
+        "liquor_store": "liquor_store",
+        "local_government_office": "établissement gouvernemental",
+        "locksmith": "serrurier",
+        "lodging": "hébergement",
+        "meal_delivery": "repas à livraison",
+        "meal_takeaway": "repas à emporter",
+        "mosque": "mosquée",
+        "movie_rental": "movie_rental",
+        "movie_theater": "movie_theater",
+        "moving_company": "déménagement",
+        "museum": "musée",
+        "night_club": "night_club",
+        "painter": "peintre",
+        "park": "parc",
+        "parking": "parking",
+        "pet_store": "pet_store",
+        "pharmacy": "pharmacie",
+        "physiotherapist": "physiotherapiste",
+        "plumber": "plombier",
+        "police": "police",
+        "post_office": "poste",
+        "real_estate_agency": "agence immobilière",
+        "restaurant": "restaurant",
+        "roofing_contractor": "roofing_contractor",
+        "rv_park": "rv_park",
+        "school": "school",
+        "shoe_store": "boutique chaussures",
+        "shopping_mall": "Centre de Shopping",
+        "spa": "spa",
+        "stadium": "stade",
+        "storage": "stockage",
+        "store": "Boutiques",
+        "subway_station": "métro",
+        "supermarket": "supermarché",
+        "synagogue": "synagogue",
+        "taxi_stand": "station taxi",
+        "train_station": "station train",
+        "transit_station": "station de transit",
+        "travel_agency": "agence de voyages",
+        "veterinary_care": "veterinaire",
+        "zoo": "zoo",
+        "natural_feature": "nature"
+      }
+    },
+    "drawer": {
+      "news": "Nouvautés",
+      "categories": "Categories",
+      "service": "Services",
+      "product": "Produits",
+      "issues": "Mes plaintes",
+      "city": "Ville",
+      "actions": "Mes actions"
+    },
+    "buttons": {
+      "addShop": "Ajouter une institution",
+      "editShop": "Editer"
+    },
+    "issue": {
+      "join": {
+        "message": {
+          "success": "Bravo! Vous faites désormais partie des plaingnants"
+        }
+      },
+      "solved": {
+        "message": {
+          "success": "Felicitations! nous sommes content que votre plainte soit résolue"
+        }
+      },
+      "quit": {
+        "message": {
+          "success": "Vous vous êtes supprimé de la plainte"
+        }
+      },
+      "like": {
+        "message": {
+          "success": "Merci pour votre intérêt, vous serez notifié de l'avancement de cette plainte"
+        }
+      },
+      "create": {
+        "category": {
+          "select": "Choisissez la catégorie dans laquelle se trouve le problème que vous voulez signaler",
+          "selected": "Categorie :"
+        },
+        "header": ""
+      },
+
+      "stats": {
+        "similar": "problèmes similaires constatés",
+        "touched": "interessés",
+        "solved": "résolu sur",
+        "comment": "commentaires",
+        "usersCommented": "utilisateurs ont commenté",
+        "sameIssue": "plaignants"
+      },
+      "action": {
+        "title": {
+          "solved": "marquer le problème comme résolu seulement s'il a déjà été résolu, pas si vous avez obtenu une promesse",
+          "touched": "like",
+          "quitIssue": "Supprimer",
+          "sameIssue": "même problème?"
+        },
+        "label": {
+          "solved": "résolu",
+          "touched": "interessé",
+          "quitIssue": "Supprimer",
+          "sameIssue": "Rejoindre",
+          "sameIssueJoinBack" : "Réouvrir"
+        },
+        "description": {
+          "solved": "a marqué le problème comme étant résolu",
+          "quit": "s'est supprimé de la liste des plaignants",
+          "sameIssue": "a rejoint la liste des plaignants",
+          "like": "s'interesse à cette plainte",
+          "unlike": "ne s'interesse plus à cette plainte"
+        },
+        "add": {
+          "solved": "Problème résolu",
+          "like": "Je vous encourage",
+          "facebook": "partager",
+          "sameIssue": "J'ai le même problème!",
+          "rejected": "Rejeter",
+          "rejectedComment": "Problème rejeté",
+          "placeholder": {
+            "COMMENT": "Ajouter votre commentaire",
+            "SHOP_ACTION_EXPECTED": "Spécifiez l'action que vous voudriez demander à l'institution",
+            "SHOP_ACTION_REFUSED": "Spécifiez pourquoi vous refusez l'action demandée par votre client",
+            "USER_ACTION_EXPECTED": "Spécifiez l'action que vous voudriez demander au client",
+            "USER_ACTION_REFUSED": "Spécifiez pourquoi vous désapprouvez l'action de l'institution"
+          }
+        }
+      }
+    }
+  },
+  "panel": {
+    "right": {
+      "Home": {
+        "info": {
+          "header": "Qu'est-ce que je fais?",
+          "title": "Vous voyez les dernières plaintes en cours",
+          "li1": "Vous pouvez voir les plaintes par catégories en selectionnant le menu <b>Categories</b> en haut de page",
+          "li2": "Vous pouvez voir les plaintes d'une institution en la selectionnant dans le cadre <b>trouvez une institution</b> ici à gauche",
+          "li3": "Vous pouvez accéder à vos plaintes en cliquant sur le menu <b>Mes plaintes</b> en haut de page"
+        }
+      },
+      "Categories": {
+        "info": {
+          "header": "Qu'est-ce que je fais?",
+          "title": "Choisissez une categorie",
+          "li1": "Selectionnez l'endroit <b>où le service agit</b>",
+          "li2": "Si vous voulez vous plaindre d'un mauvais service de l'état cliquez sur <b>Ville</b>",
+          "li3": ""
+        }
+      },
+      "CategoryEntities": {
+        "info": {
+          "header": "Qu'est-ce que je fais?",
+          "title": "Retrouvez l'institution responsable",
+          "li1": "<b>1-</b> Tapez le nom de la ville ou choisissez <b>à coté de moi</b>",
+          "li2": "<b>2-</b> Tapez le nom de l'institution concernée, ",
+          "li3": "<b>Note :</b> Vous pouvez directement taper un nom d'institution sans avoir à selectionner une ville. Par exemple s'il s'agit d'un site web. <br>Si vous ne trouvez pas l'institution que vous recherchez, vous pouvez l'ajouter"
+        }
+      },
+      "SubCategoryList": {
+        "info": {
+          "header": "Qu'est-ce que je fais?",
+          "title": "Selectionnez une sous categorie",
+          "li1": "Selectionnez l'endroit <b>où le service agit</b>",
+          "li2": "Vous pourrez voir les plaintes en cours une fois la catégorie selectionnée",
+          "li3": ""
+        }
+      },
+      "MyIssues": {
+        "info": {
+          "header": "Qu'est-ce que je fais?",
+          "title": "La liste des plaintes que vous avez déposé est ici",
+          "li1": "Choisissez une plainte, vous pourrez naviguer directement vers l'institution en question",
+          "li2": "Vous pouvez cliquer sur <b>Catégories</b> en haut pour revenir à la liste de catégories",
+          "li3": "<b>Note : </b>N'oubliez pas de partager votre plainte sur facebook ou vos sites préférés. Vous nous aiderez ainsi à devenir connu et ainsi à augmenter le poids de votre plainte "
+        }
+      },
+      "SearchEntity": {
+        "info": {
+          "header": "Quelle institution me pose problème?",
+          "title": "Selectionnez l'institution de laqelle vous voulez vous plaindre",
+          "li1": "<b>1-</b> Tapez le nom de la ville ou choisissez <b>à coté de moi</b>",
+          "li2": "<b>2-</b> Tapez le nom de l'institution concernée, ",
+          "li3": "<b>Note :</b> Vous pouvez directement taper un nom d'institution sans avoir à selectionner une ville. Par exemple s'il s'agit d'un site web. <br>Si vous ne trouvez pas l'institution que vous recherchez, vous pouvez l'ajouter"
+        }
+      },
+      "Entity": {
+        "info": {
+          "header": "Qu'est-ce que je fais?",
+          "title": "Trouvez si quelqu'un a la même plainte que vous",
+          "li1": "Commencez par regardez ce que l'institution que vous avez selectionné a comme problèmes avec ses clients",
+          "li2": "Vous pourriez trouver une plainte comme la vôtre, il vous suffira alors de rejoindre la plainte et négocier une solution en tant que groupe plutôt que chacun individuellement",
+          "li3": "Pour ajouter une plainte, il suffit de cliquer sur le bouton <b>Nouvelle plainte</b> en haute"
+        }
+      },
+      "Issue": {
+        "info": {
+          "header": "C'est quoi cette page?",
+          "title": "Vous voyez le détail d'une plainte",
+          "li1": "Tout en haut, il y a la catégorie et les informations relatives à l'institution contre laquelle la plainte est déposée, pour les plaintes contre les services publics, l'institution est souvent un endroit qui est le repère le plus proche de la localisation du problème",
+          "li2": "Dans la section du milieu vous pouvez voir les détails relatifs à la plainte. Vous pouvez rejoindre la plainte, c'est à dire vous ajouter à la liste des plaignants.",
+          "li3": "Dans la troisième section, vous pouvez voir les réactions des visiteurs du site. Si vous avez rejoint la plainte, vous aurez la possibilité de faire plus d'opérations qu'un simple visiteur"
+        }
+      }
+    }
+  },
+
+  "service": {
+    "panel": {
+      "left": {
+        "info": {
+          "title": "Résolvez rapidement vos soucis avec les sociétés et les institutions",
+          "li1": "Obtenez une compensation en toute transparence, <b>obtenez la même chose que les autres</b> personnes qui ont eu le même problème que vous",
+          "li2": "Contribuez à un monde où les plaintes deviennes publiques, afin que les gens honnetes soient récompensés et les malhonnetes soient immédiatement identifiés dès leur première arnaque",
+          "li3": "Discutez et regroupez vous avec les gens qui ont subi la même injustice que vous"
+        }
+      }
+    },
+    "header": {
+      "city": "Ville",
+      "nearby": "à proximité",
+      "entity": {
+        "issueCount": "plaintes ouvertes : ",
+        "none": "aucune plainte ouverte",
+        "titleNameSuffix": "plaintes - 5ir.tn"
+      }
+    },
+    "addEntityGroup": {
+      "header": "Vous êtes entrain d'ajouter une société ou institution",
+      "add": "Ajouter une institution",
+      "cancel": "Annuler",
+      "name": "Nom de l'institution",
+      "web": "Site web ou page facebook",
+      "fb": "page facebook",
+      "city": "Ville"
+    },
+    "search": {
+      "addNew": "Ajouter l'institution ",
+
+      "entityHome": {
+        "hint": "tapez le nom d'une institution pour voir les plaintes déposées à son encontre"
+      },
+      "positionPlaceholder": "ville",
+      "placeholder": "société ou institution",
+      "go": "Go",
+      "result": {
+        "loading": "Recherche en cours...",
+        "phrase": "Résultats pour votre recherche",
+        "more": "plus...",
+        "from": "sur"
+      },
+      "issues": {
+        "Home": {
+          "empty": "Il n'y encore aucune plainte",
+          "title": "Liste des plaintes en cours"
+        },
+        "CategoryEntities": {
+          "empty": "aucune plainte en cours",
+          "title": "Liste des plaintes en cours"
+        },
+        "Entity": {
+          "empty": "aucune plainte en cours",
+          "title": "Liste des plaintes en cours"
+        },
+        "Issue": {
+          "empty": "aucune plainte en cours",
+          "title": "Plaintes contre l'institution"
+        },
+        "MyIssues": {
+          "empty": "Vous n'avez pas déposé de plaintes",
+          "title": "Plaintes auxquelles j'ai contribué"
+        },
+        "ProEntityGroupTickets": {
+          "empty": "Il n'y a aucune plainte dans cette section",
+          "title": "Liste des plaintes en cours"
+        },
+        "ProEntityTickets": {
+          "empty": "aucune plainte pour cette institution",
+          "title": "Liste des plaintes de l'institution"
+        },
+        "ProEntityTicketDetail": {
+          "empty": "aucune plainte pour cette institution",
+          "title": "Liste des plaintes de l'institution"
+        }
+      }
+    },
+    "issue": {
+      "state": {
+        "SHOP_ACTION_EXPECTED": {
+          "label": "Vous avez rejoint les plaignants"
+        },
+        "SHOP_ACTION_REFUSED": {
+          "label": "la plainte a été rejetée par l'institution responsable"
+        },
+        "USER_ACTION_EXPECTED": {
+          "label": "l'institution attends une réponse"
+        },
+        "USER_ACTION_REFUSED": {
+          "label": "vous êtes mécontent de la réaction de l'institution"
+        },
+        "USER_SATISFIED": {
+          "label": "le problème est résolu pour vous"
+        },
+        "USER_QUIT": {
+          "label": "vous avez quitté cette plainte"
+        }
+      }
+    },
+    "ticket": {
+      "add": {
+        "header": "Vous êtes entrain d'ajouter une plainte",
+        "title": "sujet",
+        "titlePh": "Décrivez en une ligne le problème que vous avez eu",
+        "details": "Détails",
+        "detailsPh": "Vous pouvez détailler plus votre problème: qui avez vous eu en interlocuteur, depuis combien de temps vous essayez de trouver une solution, etc...",
+        "video": "Lien vidéo",
+        "videoPh": "Copiez et collez l'adresse d'une video youtube, vimeo ou autre ici",
+        "addBtn": "Publier",
+        "saveDraftBtn": "Brouillon",
+        "cancelBtn": "Annuler",
+        "addFile": "ajouter une image",
+        "issueOpenEditionDisabled": "Ce problème est devenu publique, vous ne pouvez plus l'éditer",
+        "editIssue": "editer",
+        "deleteIssue": "supprimer",
+        "closeDetail": "fermer",
+        "attachmentsToRemoveTitle": "images à supprimer",
+        "billingDate": "date d'achat",
+        "issueDate": "date du problème"
+      }
+    },
+    "complaint": {
+      "list": {
+        "more": {
+          "empty": "Il n'y a encore aucune plainte",
+          "info": "vous voyez {{visibleCount}} plaintes sur {{totalCount}} au total",
+          "btn": "plus..."
+        }
+      },
+      "actionList": {
+        "commentsOnlyBtn": "Commentaires uniquement"
+      },
+      "by": "par",
+      "privateIconHint": "la plainte reste en mode privée pendant 10 jours",
+      "likesIconHint": "plainte aimée",
+      "similarIssueIconHint": "même problème pour moi",
+      "draft": "brouillon"
+    }
+  },
+  "pro": {
+    "header": {
+      "welcome": "5ir.tn Pro",
+      "search": {
+        "placeholder": "Cherchez une plainte"
+      }
+    },
+    "issue": {
+      "list": {
+        "filter": {
+          "showDelayed": "différés",
+          "showPublic": "publics",
+          "showWaitingForUser": "en attente d'action de l'utilisateur",
+          "showWaitingForASA": "en attente d'action de l'agent"
+        }
+      },
+      "detail": {
+        "close": "fermer"
+      }
+    }
+  },
+  "home": {
+    "header": "Report a ",
+    "service": {
+      "title": "Bad service",
+      "short-desc": "If you purchased a service you are not satisfied with, make the company react rapidly to your complaint: complain publicly here to make your issue visible to google and everybody who searches for info about that company in the world, as long as you did not flag your issue as 'solved', it will remain in the list of the company's unsolved customer issues",
+      "full-desc": "lorem ipsum dolor"
+    },
+    "city": {
+      "title": "Theft or agression",
+      "short-desc": "Coming next : If you were victim of a theft, agression or other issue that should be handled by the public services, you can report it here so that people can have real statistics about city happiness. People moving to a new home will be able to choose the right quarter for their family, and the mayor of each rural area will be judged against factual numbers reflecting his efficiency",
+      "short-desc1": "If you were victim of a theft or agression, people must know that the quarter it happened in is not safe. People moving to a new home will be able to choose the right quarter for his family, and the mayor of each rural area will be judged against factual numbers",
+      "full-desc": "lorem ipsum dolor"
+    },
+    "product": {
+      "title": "Bad product",
+      "short-desc": "Coming next: If a product you purchased shows to be of bad quality or durability, you can reference it here to share your experience and exchange about solutions and alternatives. You will be able to compare brands by the average quality of their products while putting pressure on manufacturers to make them have more reliable offers",
+      "full-desc": "lorem ipsum dolor"
+    }
+  },
+  "comment": {
+    "add": {
+      "notLogged": "Vous devez <1>vous logger</1> pour ajouter un commentaire"
+    }
+  },
+  "complaint": {
+    "addActionOk": "Ajouter",
+    "addActionCancel": "Annuler"
+  },
+  "addComplaint": {
+    "add": "Nouvelle plainte",
+    "header": "Nouvelle plainte"
+  },
+  "complaintActionList": {
+    "empty": "Il n'y a aucun commentaire, soyez le premier à réagir à cette plainte"
+  },
+  "header": {
+    "search": "Rechercher",
+    "login": "S'authentifier"
+  },
+  "shopList": {
+    "activeComplaints": "plaintes non résolues",
+    "noComplaints": "aucune plainte en cours",
+    "header": "Commerces correspondant à votre recherche",
+    "home": "Accueil"
+  },
+  "addComplaintComment": {
+    "header": "Votre commentaire"
+  }
+}
