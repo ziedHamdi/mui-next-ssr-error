@@ -4,12 +4,14 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
-import { makeStyles } from 'tss-react/mui';
+import {Box} from "@mui/material";
 
-const HeadingBar = dynamic(()=> import( "./HeadingBar" ))
-const Footer =  dynamic(()=> import( "./Footer"))
+// const HeadingBar = dynamic(() => import( "./HeadingBar" ))
+// const Footer = dynamic(() => import( "./HeadingBar" ))
+import HeadingBar from "./HeadingBar"
+import Footer from  "./Footer"
 
-const useStyles = makeStyles()((theme) => ({
+const sx = {
     '@global': {
         ul: {
             margin: 0,
@@ -18,80 +20,76 @@ const useStyles = makeStyles()((theme) => ({
         },
     },
     link: {
-        margin: theme.spacing(1, 1.5),
+        mx: 1.5,
+        my: 1
+    },
+    mainLayout: {
+        minWidth: '320px',
+        p: {
+            xs: 0
+        },
+        display: 'flex',
+        flexDirection: 'column'
     },
     body: {
-        backgroundColor: theme.palette.background.default,
-        padding: '0 2%',
-        paddingBottom: theme.spacing(4),
-        [theme.breakpoints.up('lg')]: {
-            padding: '0 12%',
+        backgroundColor: 'background.default',
+        px: {
+            xs: 0,
+            lg: '12%'
         },
-        [theme.breakpoints.down('md')]: {
-            padding: 0
-        }
-    },
-    container: {
-        minWidth: '320px',
-        [theme.breakpoints.down('sm')]: {
-            padding: 0
-        }
+        py: 3,
     },
     trending: {
         minHeight: '5em'
     },
     content: {
-        marginTop: theme.spacing(2),
+        mt: {
+            xs: 0,
+            md: 0
+        },
         display: 'flex',
         flexFlow: 'column',
         maxWidth: '100% !important',
-        [theme.breakpoints.down('md')]: {
-            margin: 0
-        }
     },
     footer: {
-        // borderTop: `1px solid ${theme.palette.divider}`,
-        paddingTop: theme.spacing(1.5),
-        paddingBottom: theme.spacing(3),
-        [theme.breakpoints.down('md')]: {
-            paddingTop: theme.spacing(0.5),
-            paddingBottom: theme.spacing(0.5),
+        pt: {
+            xs: 0.5,
+            md: 1.5
+        },
+        pb: {
+            xs: 0.5,
+            md: 3
         },
     },
-}));
+}
 
 export default function MainLayout({children, showTrending}) {
-    const {classes} = useStyles();
-
     return (
         <React.Fragment>
             <CssBaseline/>
             {/* Header */}
-            <Container maxWidth="xl" className={classes.container}>
+            <Container maxWidth="xl" sx={sx.mainLayout} id="MainLayout">
                 <HeadingBar/>
                 {/* End Header */}
-                <div className={classes.body}>
-                    <Grid container direction="column">
-                        {showTrending && (<Grid item className={classes.trending}>
-                            <Typography component="h1" variant="h5" align="left" color="textPrimary" gutterBottom>
-                                Trending
-                            </Typography>
-                            <Grid container spacing={4} justifyContent="space-evenly">
-
-                            </Grid>
-
-                        </Grid>)}
-
-                        <Grid item className={classes.content}>
-                            {children}
+                <Grid container direction="column" sx={sx.body} id="MainLayoutBody">
+                    {showTrending && (<Grid item sx={sx.trending} id="MainLayoutTrending">
+                        <Typography component="h1" variant="h5" align="left" color="textPrimary" gutterBottom>
+                            Trending
+                        </Typography>
+                        <Grid container spacing={4} justifyContent="space-evenly">
                         </Grid>
+
+                    </Grid>)}
+
+                    <Grid item sx={sx.content} id="MainLayoutContent">
+                        {children}
                     </Grid>
-                </div>
+                </Grid>
 
                 {/* Footer */}
-                <div component="footer" className={classes.footer}>
+                <Box component="footer" sx={sx.footer} id='footer'>
                     <Footer/>
-                </div>
+                </Box>
             </Container>
             {/* End footer */}
         </React.Fragment>

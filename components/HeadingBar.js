@@ -1,92 +1,90 @@
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
-import NPage from "next/link";
 import Link from "@mui/material/Link";
-import React, {useEffect, useState} from "react";
-import * as PropTypes from "prop-types";
-// import makeStyles from '@mui/styles/makeStyles';
-import {makeStyles} from 'tss-react/mui';
+import React, {useState} from "react";
 import {
     useSession, signIn, signOut
 } from 'next-auth/react'
 import {Box, Icon} from "@mui/material";
+import AddComplaint from "./complaint/AddComplaint";
 import Nlink from "next/link";
 import {useApolloClient} from "@apollo/client";
 import {useRouter} from 'next/router'
-
-import {Menu, MenuItem, Divider} from '@mui/material';
+import {Menu, MenuItem} from '@mui/material';
 import {ExpandMore} from '@mui/icons-material';
 import ReactGA from "react-ga";
 
 // can override sign in error messages : https://simplernerd.com/next-auth-custom-error-page/
 
-const useStyles = makeStyles()((theme) => {
-    return {
-        appBar: {
-            // borderBottom: `1px solid ${theme.palette.divider}`,
-            backgroundColor: 'white',
-            padding: '0 2%',
-            [theme.breakpoints.up('lg')]: {
-                padding: '0 12%',
-            },
-        },
-        toolbar: {
-            flexWrap: 'wrap',
-            padding: 0,
-            display: 'flex',
-            alignContent: 'center',
-            flexDirection: 'row',
-            alignItems: 'center',
-            gap: theme.spacing(0.5)
-        },
-        close: {
-            color: theme.palette.text.secondary
-        },
-        logoA: {
-            width: 'auto',
-            paddingTop: theme.spacing(1)
-        },
-        logo: {
-            height: '28px',
-            width: '70px',
-        },
-
-        toolbarTitle: {
-            display: 'flex',
-            flexFlow: 'row nowrap',
-            flexGrow: 1,
-            alignItems: 'center',
-            gap: theme.spacing(1)
-        },
-        link: {
-            margin: theme.spacing(1, 1.5),
-            cursor: 'pointer'
-        },
-        user: {
-            display: 'flex',
-            flexDirection: 'row',
-            alignItems: 'center',
-            padding: theme.spacing(1, 1, 1, 2),
-            '& img': {
-                borderRadius: '50%',
-                marginRight: theme.spacing(0.5),
-                height: theme.spacing(4.5),
-                width: theme.spacing(4.5)
-            },
-            cursor: 'pointer'
-        },
-        logout: {
-            display: 'flex',
-            flexDirection: 'row',
-            flexWrap: 'nowrap'
+const sx = {
+    appBar: {
+        backgroundColor: 'white',
+        p: 0,
+        px: {
+            sm: '2%',
+            lg: '12%'
         }
+    },
+    toolbar: {
+        flexWrap: 'wrap',
+        padding: 0,
+        display: 'flex',
+        alignContent: 'center',
+        flexDirection: 'row',
+        alignItems: 'center',
+        gap: 0.5,
+
+    },
+    close: {
+        cursor: 'pointer',
+        color: 'text.secondary'
+    },
+    logoA: {
+        width: 'auto',
+        paddingTop: 1
+    },
+    logo: {
+        height: '28px',
+        width: '70px',
+    },
+
+    toolbarTitle: {
+        display: 'flex',
+        flexFlow: 'row nowrap',
+        flexGrow: 1,
+        alignItems: 'center',
+        gap: 1
+    },
+    link: {
+        marginTop: 1,
+        marginBottom: 1,
+        marginRight: 1.5,
+        marginLeft: 1.5,
+        cursor: 'pointer'
+    },
+    user: {
+        display: 'flex',
+        flexDirection: 'row',
+        alignItems: 'center',
+        padding: 1,
+        paddingLeft:2,
+        '& img': (theme)=>({
+            borderRadius: '50%',
+            marginRight: 0.5,
+            height: theme.spacing(4.5),
+            width: theme.spacing(4.5)
+        }),
+        cursor: 'pointer'
+    },
+    logout: {
+        display: 'flex',
+        flexDirection: 'row',
+        flexWrap: 'nowrap'
     }
-})
+}
 
 export default function HeadingBar(props) {
-    const {classes} = useStyles();
     const client = useApolloClient()
     const {data: session, status} = useSession()
 
@@ -107,29 +105,35 @@ export default function HeadingBar(props) {
     const notHomePage = pathname !== "/"
 
     return (
-        <AppBar position="static" color="default" elevation={0} className={classes.appBar}>
+        <AppBar position="static" color="default" elevation={0} sx={sx.appBar} id="HeadingBar">
             <Toolbar sx={{
                 flexWrap: 'wrap',
-                padding: 0,
+                pl: {
+                    xs: 1,
+                },
+                pr: {
+                    xs: 0,
+                },
                 display: 'flex',
                 alignContent: 'center',
                 flexDirection: 'row',
                 alignItems: 'center',
-                gap: 0.5
+                gap: 0.5,
             }}>
-                {notHomePage && <Icon onClick={() => router.push("/")} className={classes.close}>
+                {notHomePage && <Icon onClick={() => router.push("/")} sx={sx.close}>
                     close
                 </Icon>}
                 <Nlink href="/">
-                    <a className={classes.logoA}><img className={classes.logo} src="/images/logo_h40px.svg"
-                                                      alt="WeAlly logo"/></a>
+                    <a sx={sx.logoA}><img sx={sx.logo} src="/images/logo_h40px.svg"
+                                               alt="WeAlly logo"/></a>
                 </Nlink>
-                <Typography variant="h6" color="inherit" noWrap className={classes.toolbarTitle}>
+                <Typography variant="h6" color="inherit" noWrap sx={sx.toolbarTitle}>
                     {/*<Typography variant="body1" color="secondary"> > McDonald's x</Typography>*/}
                 </Typography>
+                <AddComplaint category={null}/>
 
                 {session &&
-                (<Box onClick={handleMenuOpen} className={classes.user}>
+                (<Box onClick={handleMenuOpen} sx={sx.user}>
                     <img src={session.user.image}></img>
                     <ExpandMore/>
                 </Box>)
@@ -140,7 +144,7 @@ export default function HeadingBar(props) {
                     <Link
                         variant="button"
                         color="primary"
-                        className={classes.link}
+                        sx={sx.link}
                         onClick={doSignIn}
                         underline="hover">
                         {"Sign in"}
@@ -159,15 +163,15 @@ export default function HeadingBar(props) {
                     anchorOrigin={{horizontal: 'right', vertical: 'bottom'}}
                 >
                     <MenuItem>
-                        <div className={classes.logout}>
-                            <Box className={classes.user}>
+                        <div sx={sx.logout}>
+                            <Box sx={sx.user}>
                                 <img src={session.user.image}></img>
                                 <Typography variant="h6">{session.user.name}</Typography>
                             </Box>
                         </div>
                     </MenuItem>
                     <MenuItem onClick={doSignOut}>
-                        <Typography variant="button" className={classes.link}>Sign out</Typography>
+                        <Typography variant="button" sx={sx.link}>Sign out</Typography>
                     </MenuItem>
                 </Menu>
                 }
