@@ -2,7 +2,7 @@ import { createTheme, adaptV4Theme } from '@mui/material/styles';
 import { red } from '@mui/material/colors';
 
 // Create a theme instance.
-const theme = createTheme({
+const theme = createTheme(adaptV4Theme({
     breakpoints: {
         values: {
             xs: 0,
@@ -64,7 +64,7 @@ const theme = createTheme({
         },
     },
 
-});
+}));
 
 theme.typography.body1 = {
     [theme.breakpoints.down('sm')]: {
